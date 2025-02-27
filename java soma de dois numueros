@@ -1,0 +1,22 @@
+package aula; // Declara o pacote onde a classe aula1 está localizada.
+
+import java.util.Scanner; // Importa a classe Scanner do pacote java.util, que permite a leitura de entrada do usuário.
+
+public class aula1 { // Declara a classe pública chamada aula1.
+
+    public static void main(String[] args) { // Declara o método main, o ponto de entrada do programa.
+        Scanner scanner = new Scanner(System.in); // Cria um objeto Scanner chamado scanner, que lê a entrada do System.in (entrada padrão, geralmente o teclado).
+
+        System.out.println("digite o primeiro numero inteiro"); // Imprime na tela a mensagem solicitando o primeiro número inteiro.
+        int numero1 = scanner.nextInt(); // Lê o próximo inteiro digitado pelo usuário e armazena na variável numero1.
+
+        System.out.println("digite o segundo numero inteiro"); // Imprime na tela a mensagem solicitando o segundo número inteiro.
+        int numero2 = scanner.nextInt(); // Lê o próximo inteiro digitado pelo usuário e armazena na variável numero2.
+
+        int soma = numero1 + numero2; // Calcula a soma dos dois números (numero1 e numero2) e armazena o resultado na variável soma.
+
+        System.out.println("A soma dos dois numeros é:" + soma); // Imprime na tela a mensagem com o resultado da soma.
+
+        scanner.close(); // Fecha o objeto Scanner para liberar recursos. É uma boa prática fechar o scanner quando não for mais necessário.
+    }
+}
