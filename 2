@@ -1,0 +1,19 @@
+package aula; // Declara o pacote onde a classe exeplo2 está localizada.
+
+public class exeplo2 { // Declara a classe pública chamada exeplo2.
+
+    public static void main(Stringargs) { // Declara o método main, o ponto de entrada do programa.
+
+        intmatriz = { // Declara e inicializa uma matriz bidimensional de inteiros chamada matriz.
+                {1, 2, 3}, // Primeira linha da matriz.
+                {4, 5, 6}, // Segunda linha da matriz.
+                {7, 8, 9}  // Terceira linha da matriz.
+        };
+
+        System.out.println("Matriz:"); // Imprime a mensagem "Matriz:" no console.
+
+        for (int i = 0; i < matriz.length; i++) { // Inicia um loop externo que itera sobre as linhas da matriz.
+            // i representa o índice da linha atual.
+            // matriz.length retorna o número de linhas na matriz.
+
+            for (int j = 0; j < matriz[i].length; j++) { // Inicia um loop interno que itera sobre as colunas da linha atual.
